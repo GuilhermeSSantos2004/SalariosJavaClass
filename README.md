@@ -31,3 +31,35 @@ Este projeto consiste em um simples sistema de folha de pagamento em Java, que d
 - **Classe FuncionarioPorHora:** Subclasse de Funcionario que representa um funcionário que recebe com base nas horas trabalhadas e no valor da hora.
 
 - **Classe Gerente:** Subclasse de Funcionario que representa um gerente com um salário base e um bônus de desempenho.
+
+
+ -------------------------              -------------------------              -------------------------
+|        Funcionario       |            |     FuncionarioPorHora   |           |   FuncionarioIntegral    |
+ -------------------------              -------------------------              -------------------------
+| - nome: String           |            | - horasTrabalhadas: int  |            |                         |
+| - idade: int             |            | - valorHora: double      |            |                         |
+| - salario: double        |            -------------------------              -------------------------
+ -------------------------                    ^                                         ^
+| + Funcionario(nome,     |                    |                                         |
+|   idade, salario)       |                    |                                         |
+| + calcularSalario():    |                    |                                         |
+|   double                |                    |                                         |
+| + getters e setters     |                    |                                         |
+ -------------------------              -------------------------              -------------------------
+          |                                  |                                  
+          | extends                          | extends                               
+          |                                  |                                  
+ -------------------------              -------------------------              
+|         Gerente         |            |          Main           |              
+ -------------------------              -------------------------              
+| - salarioBase: double   |            |                         |              
+| - bonusDesempenho:      |            | + main(args: String[]):|              
+|   double                |            |                         |              
+ -------------------------              -------------------------              
+| + Gerente(nome, idade, |                                          
+|   salario, salarioBase, |                                          
+|   bonusDesempenho)      |                                          
+| + calcularSalario():    |                                          
+|   double                |                                          
+ -------------------------                                          
+
